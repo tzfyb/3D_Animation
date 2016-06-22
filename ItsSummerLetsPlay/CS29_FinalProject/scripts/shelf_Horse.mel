@@ -1,0 +1,597 @@
+global proc shelf_Horse () {
+    global string $gBuffStr;
+    global string $gBuffStr0;
+    global string $gBuffStr1;
+
+
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "crc_horseGUI;" 
+        -enableBackground 0
+        -align "center" 
+        -label "GUI" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "GUI" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "crc_horseGUI;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "select -r Rhett_2008_3_3_12:lf_frontHoof_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_frontLegAnkle_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_frontElbow_CTRL ;" 
+        -enableBackground 0
+        -align "center" 
+        -label "select -r Rhett_2008_3_3_12:lf_frontHoof_CTRL ;\nselect -tgl Rhet..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "LFront" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "select -r Rhett_2008_3_3_12:lf_frontHoof_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_frontLegAnkle_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_frontElbow_CTRL ;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "select -r Rhett_2008_3_3_12:rt_frontHoof_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_frontLegAnkle_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_frontElbow_CTRL ;\n" 
+        -enableBackground 0
+        -align "center" 
+        -label "select -r Rhett_2008_3_3_12:rt_frontHoof_CTRL ;\nselect -tgl Rhet..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "RFront" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "select -r Rhett_2008_3_3_12:rt_frontHoof_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_frontLegAnkle_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_frontElbow_CTRL ;\n" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "select -r Rhett_2008_3_3_12:lf_rearAnkle_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_rearHoof_CTRL ;" 
+        -enableBackground 0
+        -align "center" 
+        -label "select -r Rhett_2008_3_3_12:lf_rearAnkle_CTRL ;\nselect -tgl Rhet..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "LRear" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "select -r Rhett_2008_3_3_12:lf_rearAnkle_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_rearHoof_CTRL ;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "select -r Rhett_2008_3_3_12:rt_rearHoof_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_rearAnkle_CTRL ;" 
+        -enableBackground 0
+        -align "center" 
+        -label "select -r Rhett_2008_3_3_12:rt_rearHoof_CTRL ;\nselect -tgl Rhett..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "RRear" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "select -r Rhett_2008_3_3_12:rt_rearHoof_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_rearAnkle_CTRL ;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "select -r Rhett_2008_3_3_12:lf_frontLeg_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_frontLeg_CTRL ;" 
+        -enableBackground 0
+        -align "center" 
+        -label "select -r Rhett_2008_3_3_12:lf_frontLeg_CTRL ;\nselect -tgl Rhett..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "FrontShr" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "select -r Rhett_2008_3_3_12:lf_frontLeg_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_frontLeg_CTRL ;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "select -r Rhett_2008_3_3_12:lf_rearLeg_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_rearLeg_CTRL ;" 
+        -enableBackground 0
+        -align "center" 
+        -label "select -r Rhett_2008_3_3_12:lf_rearLeg_CTRL ;\nselect -tgl Rhett_..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "RearShr" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "select -r Rhett_2008_3_3_12:lf_rearLeg_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_rearLeg_CTRL ;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "select -r Rhett_2008_3_3_12:ct_lowNeck_CTRL ;\nselect -tgl Rhett_2008_3_3_12:ct_midNeck_CTRL ;\nselect -tgl Rhett_2008_3_3_12:ct_head_CTRL ;" 
+        -enableBackground 0
+        -align "center" 
+        -label "select -r Rhett_2008_3_3_12:ct_lowNeck_CTRL ;\nselect -tgl Rhett_..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "Neck" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "select -r Rhett_2008_3_3_12:ct_lowNeck_CTRL ;\nselect -tgl Rhett_2008_3_3_12:ct_midNeck_CTRL ;\nselect -tgl Rhett_2008_3_3_12:ct_head_CTRL ;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "select -r Rhett_2008_3_3_12:ct_frontTorso_CTRL ;\nselect -tgl Rhett_2008_3_3_12:ct_rearTorso_CTRL ;" 
+        -enableBackground 0
+        -align "center" 
+        -label "select -r Rhett_2008_3_3_12:ct_frontTorso_CTRL ;\nselect -tgl Rhe..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "Torso" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "select -r Rhett_2008_3_3_12:ct_frontTorso_CTRL ;\nselect -tgl Rhett_2008_3_3_12:ct_rearTorso_CTRL ;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "select -r Rhett_2008_3_3_12:ct_tail_aCTRL ;\nselect -tgl Rhett_2008_3_3_12:ct_tail_bCTRL ;\nselect -tgl Rhett_2008_3_3_12:ct_tail_cCTRL ;" 
+        -enableBackground 0
+        -align "center" 
+        -label "select -r Rhett_2008_3_3_12:ct_tail_aCTRL ;\nselect -tgl Rhett_20..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "Tail" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "select -r Rhett_2008_3_3_12:ct_tail_aCTRL ;\nselect -tgl Rhett_2008_3_3_12:ct_tail_bCTRL ;\nselect -tgl Rhett_2008_3_3_12:ct_tail_cCTRL ;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "select -r Rhett_2008_3_3_12:lf_earLow_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_earHigh_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_earlow_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_earHigh_CTRL ;" 
+        -enableBackground 0
+        -align "center" 
+        -label "select -r Rhett_2008_3_3_12:lf_earLow_CTRL ;\nselect -tgl Rhett_2..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "Ear" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "select -r Rhett_2008_3_3_12:lf_earLow_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_earHigh_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_earlow_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_earHigh_CTRL ;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "select -r Rhett_2008_3_3_12:ct_midBack_CTRL ;" 
+        -enableBackground 0
+        -align "center" 
+        -label "select -r Rhett_2008_3_3_12:ct_midBack_CTRL ;" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "MidBack" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "select -r Rhett_2008_3_3_12:ct_midBack_CTRL ;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "select -r Rhett_2008_3_3_12:ct_COG_CTRL ;" 
+        -enableBackground 0
+        -align "center" 
+        -label "select -r Rhett_2008_3_3_12:ct_COG_CTRL ;" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "COG" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "select -r Rhett_2008_3_3_12:ct_COG_CTRL ;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "select -r Rhett_2008_3_3_12:rt_rearAnkle_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_rearAnkle_CTRL ;" 
+        -enableBackground 0
+        -align "center" 
+        -label "select -r Rhett_2008_3_3_12:rt_rearAnkle_CTRL ;\nselect -tgl Rhet..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "Rear" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "select -r Rhett_2008_3_3_12:rt_rearAnkle_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_rearAnkle_CTRL ;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "select -r Rhett_2008_3_3_12:lf_frontLegAnkle_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_frontLegAnkle_CTRL ;" 
+        -enableBackground 0
+        -align "center" 
+        -label "select -r Rhett_2008_3_3_12:lf_frontLegAnkle_CTRL ;\nselect -tgl ..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "Front" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "select -r Rhett_2008_3_3_12:lf_frontLegAnkle_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_frontLegAnkle_CTRL ;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "select -r Rhett_2008_3_3_12:rt_frontLegAnkle_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_frontHoof_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_frontLegAnkle_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_frontHoof_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_rearAnkle_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_rearHoof_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_rearAnkle_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_rearHoof_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_BFhoof_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_BFhoof_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_FFhoof_CTRL ;\n\nselect -tgl Rhett_2008_3_3_12:rt_FFhoof_CTRL ;" 
+        -enableBackground 0
+        -align "center" 
+        -label "select -r Rhett_2008_3_3_12:rt_frontLegAnkle_CTRL ;\nselect -tgl ..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "AllLegs" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "select -r Rhett_2008_3_3_12:rt_frontLegAnkle_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_frontHoof_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_frontLegAnkle_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_frontHoof_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_rearAnkle_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_rearHoof_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_rearAnkle_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_rearHoof_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_BFhoof_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_BFhoof_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_FFhoof_CTRL ;\nselect -tgl Rhett_2008_3_3_12:RhettMedMesh3 ;\nselect -tgl Rhett_2008_3_3_12:RhettMedMesh3 ;\nselect -tgl Rhett_2008_3_3_12:rt_FFhoof_CTRL ;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "select -r Rhett_2008_3_3_12:ct_lowNeck_CTRL ;\nselect -tgl Rhett_2008_3_3_12:ct_midNeck_CTRL ;\nselect -tgl Rhett_2008_3_3_12:ct_head_CTRL ;" 
+        -enableBackground 0
+        -align "center" 
+        -label "select -r Rhett_2008_3_3_12:ct_lowNeck_CTRL ;\nselect -tgl Rhett_..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "Neck" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "select -r Rhett_2008_3_3_12:ct_lowNeck_CTRL ;\nselect -tgl Rhett_2008_3_3_12:ct_midNeck_CTRL ;\nselect -tgl Rhett_2008_3_3_12:ct_head_CTRL ;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "select -r Rhett_2008_3_3_12:rt_earlow_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_earLow_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_earHigh_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_earHigh_CTRL ;" 
+        -enableBackground 0
+        -align "center" 
+        -label "select -r Rhett_2008_3_3_12:rt_earlow_CTRL ;\nselect -tgl Rhett_2..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "Ears" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "select -r Rhett_2008_3_3_12:rt_earlow_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_earLow_CTRL ;\nselect -tgl Rhett_2008_3_3_12:lf_earHigh_CTRL ;\nselect -tgl Rhett_2008_3_3_12:rt_earHigh_CTRL ;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "select -r Rhett_2008_3_3_12:faceControl_CTRL ;" 
+        -enableBackground 0
+        -align "center" 
+        -label "select -r Rhett_2008_3_3_12:faceControl_CTRL ;" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "Face" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "select -r Rhett_2008_3_3_12:faceControl_CTRL ;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+} 
